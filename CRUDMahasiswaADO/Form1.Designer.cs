@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txxtNIM = new System.Windows.Forms.Label();
+            this.txtNIM = new System.Windows.Forms.Label();
             this.txtNama = new System.Windows.Forms.Label();
             this.cmbJK = new System.Windows.Forms.Label();
-            this.dtpTanggalLahir = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtAlamat = new System.Windows.Forms.Label();
             this.txtKodeProdi = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -39,7 +39,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -48,17 +47,18 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnConnect = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
+            this.dtpTanggalLahir = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txxtNIM
+            // txtNIM
             // 
-            this.txxtNIM.AutoSize = true;
-            this.txxtNIM.Location = new System.Drawing.Point(42, 27);
-            this.txxtNIM.Name = "txxtNIM";
-            this.txxtNIM.Size = new System.Drawing.Size(31, 16);
-            this.txxtNIM.TabIndex = 0;
-            this.txxtNIM.Text = "NIM";
+            this.txtNIM.AutoSize = true;
+            this.txtNIM.Location = new System.Drawing.Point(42, 27);
+            this.txtNIM.Name = "txtNIM";
+            this.txtNIM.Size = new System.Drawing.Size(31, 16);
+            this.txtNIM.TabIndex = 0;
+            this.txtNIM.Text = "NIM";
             // 
             // txtNama
             // 
@@ -78,14 +78,14 @@
             this.cmbJK.TabIndex = 2;
             this.cmbJK.Text = "Jenis Kelamin";
             // 
-            // dtpTanggalLahir
+            // label5
             // 
-            this.dtpTanggalLahir.AutoSize = true;
-            this.dtpTanggalLahir.Location = new System.Drawing.Point(42, 152);
-            this.dtpTanggalLahir.Name = "dtpTanggalLahir";
-            this.dtpTanggalLahir.Size = new System.Drawing.Size(90, 16);
-            this.dtpTanggalLahir.TabIndex = 3;
-            this.dtpTanggalLahir.Text = "Tanggal Lahir";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(42, 152);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(90, 16);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Tanggal Lahir";
             // 
             // txtAlamat
             // 
@@ -143,13 +143,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 24);
             this.comboBox1.TabIndex = 10;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(199, 152);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 11;
             // 
             // textBox5
             // 
@@ -219,11 +212,19 @@
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
             // 
+            // dtpTanggalLahir
+            // 
+            this.dtpTanggalLahir.Location = new System.Drawing.Point(200, 152);
+            this.dtpTanggalLahir.Name = "dtpTanggalLahir";
+            this.dtpTanggalLahir.Size = new System.Drawing.Size(200, 22);
+            this.dtpTanggalLahir.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtpTanggalLahir);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.dataGridView1);
@@ -232,7 +233,6 @@
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -240,10 +240,10 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtKodeProdi);
             this.Controls.Add(this.txtAlamat);
-            this.Controls.Add(this.dtpTanggalLahir);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbJK);
             this.Controls.Add(this.txtNama);
-            this.Controls.Add(this.txxtNIM);
+            this.Controls.Add(this.txtNIM);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -255,10 +255,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label txxtNIM;
+        private System.Windows.Forms.Label txtNIM;
         private System.Windows.Forms.Label txtNama;
         private System.Windows.Forms.Label cmbJK;
-        private System.Windows.Forms.Label dtpTanggalLahir;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label txtAlamat;
         private System.Windows.Forms.Label txtKodeProdi;
         private System.Windows.Forms.TextBox textBox1;
@@ -266,7 +266,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
@@ -275,6 +274,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.DateTimePicker dtpTanggalLahir;
     }
 }
 
